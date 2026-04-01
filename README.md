@@ -12,10 +12,10 @@ Aplicación de consola con menú interactivo para probar las funcionalidades del
 ## Requisitos para poder correr el programa
 - JDK 21 o superior
 - MySQL
-- Scritp .sql para poder generar la base de datos (incluido en en el repositorio bajo el nombre de EduStream_db
+- Scritp .sql para poder generar la base de datos (archivo incluido en en el repositorio bajo el nombre de EduStream_db)
 - Driver MySQL Connector (incluido en carpeta lib)
 
 ## Pasos paraa isar el sistema EduStream
 
 ## Paso ? - Base de datos
-1. Ejecutar el archivo EduStream_db.sql en MySQL antes de correr el proyecto. En caso de no hacerlo dará error debido a que el programa corre sobre la manipulación de datos para el respecivo CRUD dentro de la misma.
+- 1. Ejecutar el archivo EduStream_db.sql en MySQL antes de correr el proyecto. En caso de no hacerlo dará error debido a que el programa corre sobre la manipulación de datos para el respecivo CRUD dentro de la misma
