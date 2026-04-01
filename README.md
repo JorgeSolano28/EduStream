@@ -18,4 +18,4 @@ Aplicación de consola con menú interactivo para probar las funcionalidades del
 ## Pasos paraa isar el sistema EduStream
 
 ## Paso ? - Base de datos
-- 1. Ejecutar el archivo EduStream_db.sql en MySQL antes de correr el proyecto. En caso de no hacerlo dará error debido a que el programa corre sobre la manipulación de datos para el respecivo CRUD dentro de la misma
+- Paso 1: ejecutar el archivo EduStream_db.sql en MySQL antes de correr el proyecto. En caso de no hacerlo dará error debido a que el programa corre sobre la manipulación de datos para el respecivo CRUD dentro de la misma
