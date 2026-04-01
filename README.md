@@ -1,7 +1,7 @@
 # EduStream - Versión Consola (80% del trabajo final)
 
 Proyecto final Programación 2
-Aplicación de consola con menú interactivo para probar sus funcionalidades.
+Aplicación de consola con menú interactivo para probar las funcionalidades del sistema EduStream sobre gestion de cursos, usuarios e inscripciones.
 
 ## Contenido
 - POJOS: Usuario, Profesor, Estudiante, Curso, Inscripcion
@@ -11,5 +11,6 @@ Aplicación de consola con menú interactivo para probar sus funcionalidades.
 
 ## Requisitos para poder correr el programa
 - JDK 21 o superior
-- MySQL 
+- MySQL
+- Scritp .sql para poder generar la base de datos (incluido en en el repositorio bajo el nombre de EduStream_db
 - Driver MySQL Connector (incluido en carpeta lib)
