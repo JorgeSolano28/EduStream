@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package main;
 
 import claseDAO.UsuarioDAO;
@@ -12,10 +8,9 @@ import clasePOJOS.Rol;
 import java.util.List;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-/**
- *
- * @author Luis
- */
+
+
+
 public class Main {
 
     /**
@@ -25,29 +20,8 @@ public class Main {
        System.out.println("Conectando...");
        System.out.println("Logueandose...");
        System.out.println();
+
        
-                                                                         
-       
-       
-       /*UsuarioDAO usuarioDAO = new UsuarioDAO();
-       Usuario usuario = usuarioDAO.validarLogin("profe@edustream.com", "123456");
-       Usuario usuario = usuarioDAO.validarLogin("juan@correo.com", "123456");
-       
-       if (usuario != null){
-           System.out.println("Ingreso EXITOSO");
-           System.out.println("ID: " + usuario.getId());
-           System.out.println("Nombre: " + usuario.getNombre());
-           System.out.println("Email: " + usuario.getEmail());
-           System.out.println("Rol: " + usuario.getRol());
-       }else{
-           System.out.println("Ingreso FALLIDO");
-       }
-       Crud operaciones = new Crud();
-       operaciones.insertarDato(2, "LuisPrueba", "luis2@correo", "123456", "ESTUDIANTE");
-       operaciones.leerDatos();
-       operaciones.actDatos(3, "LuisPrueba5", "pruebacorreo@correo.com", "123", "ESTUDIANTE");
-       operaciones.eliDato(3);
-       */
        
        Scanner menu = new Scanner(System.in);
        String respuesta = "S";

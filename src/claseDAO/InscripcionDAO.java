@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package claseDAO;
 
 import java.sql.*;
 import claseConexion.Conexion;
 import java.time.LocalDate;
 
-/**
- *
- * @author jorge.solano
- */
 public class InscripcionDAO {
     
     //Insertar inscripcion

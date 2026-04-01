@@ -1,14 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package clasePOJOS;
-
-/**
- *
- * @author Luis
- */
-
 
 public class Curso {
     //Cambio de atributos más descriptivos porque a futuro pueden dar error al programar en web con botones

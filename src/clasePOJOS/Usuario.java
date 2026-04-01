@@ -2,11 +2,6 @@ package clasePOJOS;
 import java.time.LocalDate;
 
 
-/**
- *
- * @author jorge.solano
- */
-
 //Usuario como una clase abstracta para poder extender dos usuarios directamente **********************
 public abstract class Usuario {
     protected int id;

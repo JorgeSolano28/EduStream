@@ -1,15 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package clasePOJOS;
 
 import java.time.LocalDate;
-
-/**
- *
- * @author jorge.solano
- */
 
 //creación de clase Profesor para que sea específico a la hora de programar la web
 //hereda de la clase abstracta usuario con super y de la clase Rol se trae el enum específico ESTUDIANTE
