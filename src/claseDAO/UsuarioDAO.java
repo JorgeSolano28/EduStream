@@ -76,6 +76,71 @@ public class UsuarioDAO {
         }
     }
     
+    public void actualizarNombre(int id, String nuevoNombre) {
+        String query = "UPDATE usuarios SET nombre=? WHERE id_usuario=?";
+        try (Connection conn = Conexion.getConexion(); 
+                PreparedStatement ps = conn.prepareStatement(query)){
+
+            ps.setString(1, nuevoNombre);
+            ps.setInt(2, id);
+            ps.executeUpdate();
+            System.out.println("Nombre actualizado correctamente");
+
+        } catch (SQLException e) {
+            System.out.println("ERROR al actualizar nombre de usuario");
+            e.printStackTrace();
+        }
+    }
+    
+    public void actualizarEmail(int id, String nuevoEmail) {
+        String query = "UPDATE usuarios SET email=? WHERE id_usuario=?";
+        try (Connection conn = Conexion.getConexion(); 
+                PreparedStatement ps = conn.prepareStatement(query)){
+
+            ps.setString(1, nuevoEmail);
+            ps.setInt(2, id);
+            ps.executeUpdate();
+            System.out.println("Email actualizado correctamente");
+
+        } catch (SQLException e) {
+            System.out.println("ERROR al actualizar email de usuario");
+            e.printStackTrace();
+        }
+    }
+    
+    public void actualizarPassword(int id, String nuevoPassword) {
+        String query = "UPDATE usuarios SET password=? WHERE id_usuario=?";
+        try (Connection conn = Conexion.getConexion(); 
+                PreparedStatement ps = conn.prepareStatement(query)){
+
+            ps.setString(1, nuevoPassword);
+            ps.setInt(2, id);
+            ps.executeUpdate();
+            System.out.println("Password actualizado correctamente");
+
+        } catch (SQLException e) {
+            System.out.println("ERROR al actualizar password de usuario");
+            e.printStackTrace();
+        }
+    }
+    
+   public void actualizarRol(int id, Rol nuevoRol) {
+        String query = "UPDATE usuarios SET rol=? WHERE id_usuario=?";
+        try (Connection conn = Conexion.getConexion(); 
+                PreparedStatement ps = conn.prepareStatement(query)) {
+
+            ps.setString(1, nuevoRol.name());
+            ps.setInt(2, id);
+            ps.executeUpdate();
+            System.out.println("Rol actualizado correctamente");
+
+        } catch (SQLException e) {
+            System.out.println("ERROR al actualizar rol de usuario");
+            e.printStackTrace();
+        }
+    }
+    
+    
     //Eliminar usuario
     public void eliminarUsuario(int id) {
         String query = "DELETE FROM usuarios WHERE id_usuario=?";
@@ -94,4 +159,38 @@ public class UsuarioDAO {
         }
     }
     
+    //para ver si el id del usuario que buscamos existe en la bd
+    public boolean buscarUsuario(int id) {
+        String query = "SELECT id_usuario, nombre, email, rol FROM usuarios WHERE id_usuario=?";
+
+        try (Connection conn = Conexion.getConexion(); 
+                PreparedStatement ps = conn.prepareStatement(query)){ 
+
+            ps.setInt(1, id); 
+            ResultSet rs = ps.executeQuery(); 
+
+            if (rs.next()) {
+                int idUsuario = rs.getInt("id_usuario");
+                String nombre = rs.getString("nombre");
+                String email = rs.getString("email");
+                String rol = rs.getString("rol");
+
+                System.out.println();
+                System.out.println("Id de Usuario: " + idUsuario);
+                System.out.println("Nombre: " + nombre);
+                System.out.println("Email: " + email);
+                System.out.println("Rol: " + rol);
+                System.out.println();
+
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException e) {
+            System.out.println("ERROR al buscar usuario por ese ID");
+            e.printStackTrace();
+            return false;
+        }
+    }
+      
 }
